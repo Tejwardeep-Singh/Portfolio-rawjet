@@ -1,0 +1,40 @@
+*****************************colors*************************************
+| Purpose                  | Color Code | Name                                            |
+| ------------------------ | ---------- | ----------------------------------------------- |
+| **Primary Background**   | `#F7FAFC`  | Light Grayish Blue (very soft, calming)         |
+| **Secondary Background** | `#E2E8F0`  | Cool Gray (great for alternating sections)      |
+| **Accent Color**         | `#3B82F6`  | Blue-500 (Tailwind default) – for buttons/links |
+| **Text Color (Main)**    | `#1A202C`  | Gray-900 (almost black)                         |
+| **Text Color (Muted)**   | `#4A5568`  | Gray-700                                        |
+
+*****************************tailwind**************************************
+
+| Purpose       | Tailwind Classes                   |
+| ------------- | ---------------------------------- |
+| Background    | `bg-gray-50` or `bg-white`         |
+| Text Primary  | `text-gray-900`                    |
+| Text Muted    | `text-gray-600`                    |
+| Primary Color | `text-indigo-600`, `bg-indigo-600` |
+| Hover Button  | `hover:bg-indigo-700`              |
+| Borders       | `border-gray-200`                  |
+
+
+*****************************fonts****************************************
+
+| Font Use      | Font Name                   | Description                                                              |
+| ------------- | --------------------------- | ------------------------------------------------------------------------ |
+| **Heading**   | `Poppins` or `Inter` (Bold) | Clean, modern, geometric look. Very popular in tech & design portfolios. |
+| **Body/Text** | `Roboto` or `Open Sans`     | Highly readable on all screens. Neutral and professional.                |
+
+
+html✅
+css✅
+js✅
+node✅
+mongoose✅
+sql✅
+c✅
+c++✅
+python✅
+blender✅
+tailwind css✅
