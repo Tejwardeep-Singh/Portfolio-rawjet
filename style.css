@@ -56,6 +56,7 @@ main{
     flex-shrink: 0;
     overflow-x: scroll;
     padding: 0 10vw 0 40vw;
+    scrollbar-width: 0;
 }
 #text h1{
     font-size: 20vh;
