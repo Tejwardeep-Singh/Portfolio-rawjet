@@ -54,7 +54,8 @@ main{
     left: 0;
     z-index: 995;
     flex-shrink: 0;
-    overflow: scroll;
+    overflow-x: scroll;
+    padding: 0 10vw 0 40vw;
 }
 #text h1{
     font-size: 20vh;
@@ -63,7 +64,6 @@ main{
     color: #1a202c88;
     white-space: nowrap;
     text-align: center;
-    transform: translateX(10%);
     mix-blend-mode: difference;
     cursor: grab;
 }
@@ -273,7 +273,7 @@ section{
     animation-name: anime;
     animation-duration: 15s;
     animation-iteration-count: infinite;
-    animation-fill-mode: linear;
+    animation-timing-function: linear;
     animation-direction: alternate;
 }
 .card{
@@ -321,7 +321,7 @@ section{
         transform: translateX(0);
     }
     100% {
-        transform: translateX(20%);
+        transform: translateX(25%);
     }
 }
 #page4{
@@ -488,6 +488,11 @@ section{
     #page1{
         height: 40vh;
     }
+    #text{
+        padding: 0 10vw 0 15vw;
+        width: 100vw;
+        justify-content: start;
+    }
     #text h1{
         font-size:5vh;
     }
@@ -545,6 +550,9 @@ section{
     .card img {
         width:10vw;
         height:10vh;
+    }
+    #card-mover{
+        animation-duration: 8s;
     }
     #page4 h1 {
         font-size: 3vh;
