@@ -107,3 +107,11 @@ function navDrag(){
 
 }
 navDrag()
+const grid = document.querySelector('.grid');
+  imagesLoaded(grid, function () {
+    new Masonry(grid, {
+      itemSelector: '.grid-item',
+      columnWidth: '.grid-sizer',
+      percentPosition: true
+    });
+  });

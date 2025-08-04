@@ -38,8 +38,34 @@ main{
     height: 100vh;
     width: 100vw;
     display: flex;
+    flex-direction: column;
     align-items:center;
     justify-content:center;
+    position: relative;
+}
+#text{
+    height: fit-content;
+    width: 100vw;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 995;
+    flex-shrink: 0;
+    overflow: scroll;
+}
+#text h1{
+    font-size: 20vh;
+    font-weight: 900;
+    font-family: roboto, sans-serif;
+    color: #1a202c88;
+    white-space: nowrap;
+    text-align: center;
+    transform: translateX(10%);
+    mix-blend-mode: difference;
+    cursor: grab;
 }
 #pg1-container{
     height: 100%;
@@ -221,6 +247,7 @@ section{
     align-items: center;
     justify-content: center;
     gap: 2vh;
+    margin-top: 5vh;
 }
 #page3 h1{
     font-size: 6vh;
@@ -233,7 +260,7 @@ section{
     justify-content:center;
     align-items: center;
     position: relative;
-    overflow: hidden;
+    overflow: hidden;;
 }
 #card-mover{
     height:100%;
@@ -297,6 +324,159 @@ section{
         transform: translateX(20%);
     }
 }
+#page4{
+    height: fit-content;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5vh;
+}
+#pg4-container{
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+    gap: 2vh;
+}
+#page4 h1{
+    font-size: 6vh;
+    font-weight: 900;
+}
+.type{
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content:center;
+    gap: 5vh;
+    margin: 3vh 0;
+}
+.type h2{
+    font-size: 3vh;
+    font-weight: 900;
+    border-bottom: 2px solid #CBD5E0;
+    color:#4A5568;
+}
+.projects{
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-wrap:wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 5vh;
+}
+.project{
+    height: 40vh;
+    width: 20vw;
+    border-radius:20px;
+    overflow: hidden;
+    background-color: #3B82F6;
+    box-shadow: #1A202C 0px 0px 10px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    transition: all ease 0.3s;
+}
+.project img{
+    height: 50%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.project h4{
+    width: 100%;
+    font-size: 3vh;
+    font-weight: 900;
+    color: #1A202C;
+    font-family: poppins, sans-serif;
+    text-align: center;
+    padding: 0.2vh;
+}
+.project p{
+    font-size: 1.5vh;
+    color: #FFFFFF;
+    text-align:justify;
+    font-family: poppins, sans-serif;
+    text-align: justify;
+    padding: 1vh;
+}
+.project h5{
+    font-size: 1.5vh;
+    color: #FFFFFF;
+    text-align:justify;
+    font-family: poppins, sans-serif;
+    text-align:center;
+    padding: 1vh;
+}
+.project a{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: 900;
+    font-size: 1.5vh;
+    padding: 1vh;
+    border-radius: 10px;
+    background-color: #1A202C;
+    transition: background-color 0.3s ease;
+    margin-bottom: 1vh;
+}
+.project:hover{
+    transform: scale3d(1.05, 1.05, 1.05);
+}
+#page5{
+    height:fit-content;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 5vh;
+}
+#page5 h1{
+    font-size: 6vh;
+    font-weight: 900;
+}
+#page5 h4{
+    font-size: 3vh;
+    font-weight: 900;
+    color: #4A5568;
+}
+#blender{
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2vh;
+}
+.grid {
+  width: 100%;
+  margin: auto;
+  position: relative;
+}
+
+.grid-sizer,
+.grid-item {
+  width: 33.33%;
+}
+
+.grid-item {
+  margin-bottom: 0;
+}
+
+.grid img {
+  width: 100%;
+  height: auto; /* This keeps aspect ratio */
+  display: block;
+  object-fit: cover; /* optional */
+}
+
 @media screen and (max-width: 768px) {
     main {
         padding: 2vh 4vw;
@@ -307,6 +487,9 @@ section{
     }
     #page1{
         height: 40vh;
+    }
+    #text h1{
+        font-size:5vh;
     }
     #circle{
         height:40vw;
@@ -362,6 +545,48 @@ section{
     .card img {
         width:10vw;
         height:10vh;
+    }
+    #page4 h1 {
+        font-size: 3vh;
+    }
+    .type h2 {
+        font-size: 1.5vh;
+    }
+    .projects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 3vw;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    width:auto;
+    padding: 2vh 2vw;
+    }
+    
+
+    .project {
+    flex: 0 0 auto;       /* Prevent shrinking and enforce width */
+    width: 80vw;
+    height: fit-content;
+    transform: none;      /* REMOVE translateX */
+    }
+    .project img{
+    height: 20vh;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    }
+    .project h4 {
+    font-size: 2vh;
+    }
+    .project p {
+        font-size: 1.5vh;
+    }
+    #page5 h1 {
+        font-size: 3vh;
+    }
+    #page5 h4 {
+        font-size: 2vh;
     }
     
 }
