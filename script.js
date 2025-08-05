@@ -115,3 +115,4 @@ const grid = document.querySelector('.grid');
       percentPosition: true
     });
   });
+document.getElementById("year").innerText = new Date().getFullYear();

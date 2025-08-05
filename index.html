@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="public/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="public/favicon/android-chrome-192x192.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="public/favicon/android-chrome-192x192.png/favicon/favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="public/favicon/android-chrome-192x192.png/favicon/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="public/favicon/favicon/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="public/favicon/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="public/favicon/favicon.ico">
     <link rel="manifest" href="public/favicon/site.webmanifest">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     <link rel="stylesheet" href="style.css">
 
     <title>TEJWARDEEP SINGH</title>
@@ -17,19 +19,36 @@
     <main>
         <div id="main2">
             <div id="page1">
+                <div id="text2">
+                    <div id="text-marque" class="m1">
+                        <p>Think bigger. Code smarter.</p>
+                        <p>Think bigger. Code smarter.</p>
+                        <p>Think bigger. Code smarter.</p>
+                        <p>Think bigger. Code smarter.</p>
+                    </div>
+                </div>
+                <div id="text3">
+                    <div id="text-marque" class="m2">
+                        <p>Stay curious, Keep building</p>
+                        <p>Stay curious, Keep building</p>
+                        <p>Stay curious, Keep building</p>
+                        <p>Stay curious, Keep building</p>
+                    </div>
+                </div>
                 <div id="pg1-container">
                     <div id="image"><img src="public/images/tej.png" alt="TEJWARDEEP SINGH"></div>
                     <div id="circle">
-                        <div class="elem" id="I"><div class="up"><a href="">Contact</a></div><div class="down"></div></div>
-                        <div class="elem" id="V"><div class="up"><a href="">Goal</a></div><div class="down"></div></div>
-                        <div class="elem" id="H"><div class="up"><a href="">Home</a></div><div class="down"></div></div>
-                        <div class="elem" id="U"><div class="up"><a href="">About</a></div><div class="down"></div></div>
-                        <div class="elem" id="C"><div class="up"><a href="">Projects</a></div><div class="down"></div></div>
-                        <div class="elem" id="A"><div class="up"><a href="">Skills</a></div><div class="down"></div></div>
+                        <div class="elem" id="I"><div class="up"><a href="#page6">Contact</a></div><div class="down"></div></div>
+                        <div class="elem" id="V"><div class="up"><a href="#page5">Others</a></div><div class="down"></div></div>
+                        <div class="elem" id="H"><div class="up"><a href="#page1">Home</a></div><div class="down"></div></div>
+                        <div class="elem" id="U"><div class="up"><a href="#page2">About</a></div><div class="down"></div></div>
+                        <div class="elem" id="C"><div class="up"><a href="#page3">Projects</a></div><div class="down"></div></div>
+                        <div class="elem" id="A"><div class="up"><a href="#page4">Skills</a></div><div class="down"></div></div>
                         <div class="elem1"><h2>O</h2></div>
                     </div>
                 </div>
                 <div id="text"><h1>TEJWARDEEP SINGH</h1></div>
+                <div id="pg1-blur"></div>
             </div>
             <div id="page2">
                 <h1>About Me⭐</h1>
@@ -90,7 +109,7 @@
                     <h1>Projects🥇</h1>
                     <div class="type">
                         <h2>🌟🌟🌟🌟🌟Standalone🌟🌟🌟🌟🌟</h2>
-                        <div class="projects">
+                        <div class="projects" id="standalone">
                             <div class="project">
                                 <img src="public/images/rawjet.png" alt="Rawjet">
                                 <h4>Rawjet(Isro)</h4>
@@ -168,6 +187,37 @@
                     <div class="grid-item" ><img src="public/images/blender/12.png" alt="image here"></div>
                 </div>
             </div>
+            <div id="page6">
+                <h1>Contact Me📞</h1>
+                <div class="contact-form">
+                    <form action="#" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required />
+                    </div>
+                
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required />
+                    </div>
+                
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                
+                    <button type="submit">Send Message</button>
+                    </form>
+                </div>
+                <div class="links">
+                    <div class="link"><i class="fa-brands fa-linkedin"></i></div>
+                    <div class="link"><i class="fa-brands fa-github"></i></div>
+                    <div class="link"><i class="fa-brands fa-instagram"></i></div>
+                </div>
+            </div>
+            <footer>
+                <p>&copy; <span id="year"></span> Team Rawjet. All rights reserved.</p>
+            </footer>
         </div>
     </main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
