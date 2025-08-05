@@ -755,7 +755,7 @@ section{
         font-size: 3vh;
     }
     .type h2 {
-        font-size: 1.5vh;
+        font-size:1.8vh;
     }
     .projects {
         display: flex;
@@ -780,7 +780,7 @@ section{
     .project {
         flex: 0 0 auto;
         width: 80vw;
-        height: auto;
+        height:40vh;
         border-radius: 10px;
         background-color: #3B82F6;
         display: flex;
