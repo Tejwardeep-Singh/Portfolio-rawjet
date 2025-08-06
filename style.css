@@ -653,8 +653,11 @@ section{
     color:#3B82F6;
     border-bottom: 2px dotted #1A202C;
     transition: 0.1s all ease-in;
+  }.link a{
+    text-decoration: none;
+    color: #3B82F6;
   }
-  .link:hover{
+  .link a:hover{
     color: #1A202C;
   }
   footer{
