@@ -666,11 +666,10 @@ section{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #2563EB;
   }
   footer p{
     font-family: poppins,sans-serif;
-    color: #E2E8F0;
+    color:#3B82F6;
     font-size:2vh;
     font-weight: 900;
   }
