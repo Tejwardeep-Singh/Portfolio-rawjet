@@ -343,7 +343,8 @@ section{
     height:100%;
     width:100%;
     display: flex;
-    justify-content:space-around;
+    justify-content:start;
+    gap: 2vh;
     align-items: center;
     flex-shrink: 0;
     overflow-x: scroll;
@@ -402,7 +403,7 @@ section{
         transform: translateX(0);
     }
     100% {
-        transform: translateX(25%);
+        transform: translateX(35%);
     }
 }
 #page4{
@@ -669,7 +670,7 @@ section{
   }
   footer p{
     font-family: poppins,sans-serif;
-    color:#3B82F6;
+    color:#1A202C;
     font-size:2vh;
     font-weight: 900;
   }
