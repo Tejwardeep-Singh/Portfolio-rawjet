@@ -851,8 +851,8 @@ section{
     }
     footer p{
         font-family: poppins,sans-serif;
-        color: #E2E8F0;
         font-size:1.2vh;
         font-weight: 900;
+        color:#1A202C;
     }
 }
