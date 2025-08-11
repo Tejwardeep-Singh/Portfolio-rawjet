@@ -107,12 +107,26 @@ function navDrag(){
 
 }
 navDrag()
-const grid = document.querySelector('.grid');
-  imagesLoaded(grid, function () {
-    new Masonry(grid, {
-      itemSelector: '.grid-item',
-      columnWidth: '.grid-sizer',
-      percentPosition: true
+function grid(){
+    const grid = document.querySelector('.grid');
+    imagesLoaded(grid, function () {
+        new Masonry(grid, {
+        itemSelector: '.grid-item',
+        columnWidth: '.grid-sizer',
+        percentPosition: true
+        });
     });
-  });
-document.getElementById("year").innerText = new Date().getFullYear();
+    document.getElementById("year").innerText = new Date().getFullYear();
+}
+grid()
+function scroll(){
+    var scroll = document.querySelector("#main2");
+    scroll.addEventListener("scroll", () => {
+        let scrollTop = scroll.scrollTop;
+        let scrollHeight = scroll.scrollHeight - scroll.clientHeight;
+        let scrolled = (scrollTop / scrollHeight) * 100;
+        document.getElementById("progress-bar").style.width = scrolled + "%";
+    });
+}
+scroll()
+  

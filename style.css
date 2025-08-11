@@ -20,6 +20,18 @@ main{
     justify-content: center;
     background-color: #3B82F6;
 }
+#progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 5px;              /* Thickness of the bar */
+    background: rgb(255, 247, 0);       /* Color of the bar */
+    width:1%;                /* Start at 0% width */
+    z-index: 9999;            /* Stays above all elements */
+    transition: width 0.1s ease-out; /* Smooth animation */
+    border-radius: 50px;
+}
+
 #main2{
     height:100%;
     width:100%;
