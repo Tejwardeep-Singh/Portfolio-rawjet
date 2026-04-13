@@ -434,6 +434,7 @@ section{
     justify-content:center;
     flex-direction: column;
     gap: 2vh;
+    
 }
 #page4 h1{
     font-size: 6vh;
@@ -465,8 +466,8 @@ section{
     gap: 5vh;
 }
 .project{
-    height: 40vh;
-    width: 20vw;
+    height: 50vh;
+    width: 25vw;
     border-radius:5px;
     overflow: hidden;
     background-color: #3B82F6;
@@ -721,6 +722,8 @@ section{
     justify-content: center;
     gap: 3vw;
     margin-top: 3vh;
+    padding: 4% 0;
+    border-bottom: 2px dotted #CBD5E0;
     flex-wrap: wrap;
 }
 
@@ -742,6 +745,9 @@ section{
     margin-bottom: 2vh;
 }
 @media screen and (max-width: 768px) {
+    #identity-tag{
+        display: none;
+    }
     main {
         padding: 2vh 4vw;
         background-color: #3B82F6;
@@ -925,3 +931,50 @@ section{
     }
 }
 
+
+.project img {
+  transition: transform 0.5s ease;
+}
+
+.project:hover img {
+  transform: scale(1.08);
+}
+.project {
+  transition: all 0.3s ease;
+}
+
+.project:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+.project a {
+  background:#F7FAFC;
+  color: #1A202C;
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-size: 0.85rem;
+}
+#projects {
+  backdrop-filter: blur(10px);
+}
+.tech span {
+  background: rgba(255, 255, 255, 0.755);
+  color: #2563EB;
+  padding: 4px 10px;
+  border-radius: 5px;
+  margin-right: 5px;
+  font-size: 0.75rem;
+}
+.tech{
+    display: flex;
+    flex-wrap: wrap;
+    margin:10px;
+    gap: 5px;
+}
+.links{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 2%;
+    flex-wrap: wrap;
+}
