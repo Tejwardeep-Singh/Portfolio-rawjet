@@ -129,4 +129,10 @@ function scroll(){
     });
 }
 scroll()
-  
+
+gsap.from(".section-card", {
+  y: 40,
+  opacity: 0,
+  duration: 0.6,
+  stagger: 0.2
+});
