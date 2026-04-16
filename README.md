@@ -47,8 +47,8 @@ Interactive space-based UI with animations and mission insights.
 
 ### 📬 Contact
 - 💼 GitHub: https://github.com/Tejwardeep-Singh
-- 📧 Email: your-email@example.com
-- 🔗 LinkedIn: your-linkedin-link
+- 📧 Email: tejwardeep@gmail.com
+- 🔗 LinkedIn:https://www.linkedin.com/in/tejwardeep-singh/
 
 ### 💡 Note
 
