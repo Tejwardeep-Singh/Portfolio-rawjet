@@ -136,3 +136,4 @@ gsap.from(".section-card", {
   duration: 0.6,
   stagger: 0.2
 });
+
