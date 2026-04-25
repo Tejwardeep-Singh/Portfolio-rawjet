@@ -645,3 +645,107 @@ body {
         gap: 1rem;
     }
 }
+/* --- Restored Gallery Styling --- */
+.section-sub {
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+    font-size: 0.95rem;
+}
+
+.screenshot-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.gallery-item {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    background: var(--bg-surface);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.03);
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.img-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(transparent, rgba(0,0,0,0.8));
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 500;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.gallery-item:hover .img-caption {
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* for isro details page */
+
+/* ISRO Page Specific Enhancements */
+
+/* Give the badge a cosmic glow */
+.case-hero .badge {
+    background: rgba(147, 51, 234, 0.2); /* Deep Purple for Space */
+    color: #a855f7;
+    border: 1px solid rgba(168, 85, 247, 0.3);
+}
+
+/* Learning Box Styling */
+.learning-box {
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.05) 0%, rgba(147, 51, 234, 0.05) 100%);
+    border-radius: 20px;
+    padding: 3rem;
+    border: 1px solid var(--border);
+    text-align: center;
+}
+
+.learning-box h2 {
+    color: var(--accent);
+    margin-bottom: 1rem;
+}
+
+/* Animations Steps Dot Color */
+.isro-theme .pipe-step::before {
+    background: #a855f7;
+    box-shadow: 0 0 15px #a855f7;
+}
+
+/* Ensure the hero image looks like it's floating */
+.hero-image img {
+    animation: floating 6s ease-in-out infinite;
+}
+
+@keyframes floating {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0px); }
+}
