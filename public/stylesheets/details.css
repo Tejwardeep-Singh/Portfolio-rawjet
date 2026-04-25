@@ -382,3 +382,121 @@ body {
 .footer p span, .footer b {
     color: #ffffff;
 }
+
+/* Technical Card styling */
+.technical-card {
+    background: #151515;
+    padding: 2.5rem;
+    border-radius: 12px;
+    border-left: 4px solid var(--accent);
+}
+
+.formula-box {
+    background: #000;
+    padding: 1rem;
+    margin-top: 1.5rem;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+.formula-box code {
+    color: var(--accent);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Tech Tags styling */
+.tech-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tech-tags span {
+    background: rgba(59, 130, 246, 0.1);
+    border: 1px solid rgba(59, 130, 246, 0.3);
+    color: var(--accent);
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+}
+
+/* Workflow styling with numbers */
+.wf-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: #1a1a1a;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.wf-item span {
+    color: var(--accent);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* Ensure images don't overflow */
+.technical-image img {
+    width: 100%;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+}
+
+
+.logic-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.points-table {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    flex: 1;
+}
+
+.point-item {
+    background: rgba(255, 255, 255, 0.03);
+    padding: 10px 15px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid var(--border);
+}
+
+.point-item span {
+    font-weight: bold;
+    color: #4ade80; /* Success Green */
+}
+
+.point-item.negative span {
+    color: #f87171; /* Penalty Red */
+}
+
+.formula-box {
+    flex: 1;
+    background: #000;
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+    border: 1px solid var(--accent);
+}
+
+.formula-box code {
+    font-size: 1.1rem;
+    color: var(--accent);
+}
+
+@media (max-width: 600px) {
+    .logic-container {
+        flex-direction: column;
+    }
+    .points-table {
+        width: 100%;
+    }
+}
