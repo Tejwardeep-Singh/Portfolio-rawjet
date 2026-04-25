@@ -1,3 +1,24 @@
+document.addEventListener("DOMContentLoaded", () => {
+    const tl = gsap.timeline({ defaults: { ease: "power4.out", duration: 1.2 } });
+
+    tl.from(".hero-text h1", { y: 100, opacity: 0 })
+      .from(".subtitle", { y: 50, opacity: 0 }, "-=0.8")
+      .from(".buttons", { y: 30, opacity: 0 }, "-=1")
+      .from(".hero-image", { x: 50, opacity: 0 }, "-=1");
+
+    // Scroll reveal for sections
+    gsap.utils.toArray(".case-section").forEach(section => {
+        gsap.from(section, {
+            scrollTrigger: {
+                trigger: section,
+                start: "top 85%",
+            },
+            y: 50,
+            opacity: 0,
+            duration: 1
+        });
+    });
+});
 function nav(){
     var circle=document.querySelector(".elem1")
     var toggle=1
@@ -129,7 +150,6 @@ function scroll(){
     });
 }
 scroll()
-
 gsap.from(".section-card", {
   y: 40,
   opacity: 0,
