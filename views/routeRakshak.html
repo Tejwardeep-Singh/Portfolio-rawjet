@@ -10,133 +10,144 @@
     <link rel="manifest" href="../public/favicon/site.webmanifest">
     <link rel="stylesheet" href="../public/stylesheets/style.css">
     <link rel="stylesheet" href="../public/stylesheets/details.css">
-    <title>Tejwardeep Singh | RouteRakshak Deep Dive</title>
+    <title>Tejwardeep Singh | Route Rakshak Case Study</title>
 </head>
 <body>
 
     <div class="case">
         <nav class="nav-header">
             <a href="/" class="back-link">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <line x1="19" y1="12" x2="5" y2="12"></line>
-                    <polyline points="12 19 5 12 12 5"></polyline>
-                </svg>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
                 Back to Home
             </a>
         </nav>
 
-        <section class="case-hero">
+        <header class="case-hero">
             <div class="hero-text">
+                <span class="badge">Streaming & Geospatial Intelligence</span>
                 <h1>Route Rakshak</h1>
                 <p class="subtitle">
-                    A MERN-stack civic-tech platform for real-time municipal ward ranking and complaint transparency in Amritsar.
+                    A real-time civic monitoring platform that transforms citizen feedback into live ward performance analytics and safer navigation routing.
                 </p>
                 <div class="buttons">
-                    <a href="https://routerakshak.onrender.com/">Live Demo</a>
-                    <a href="https://github.com/Tejwardeep-Singh/RouteRakshak">GitHub</a>
+                    <a href="#" class="btn-primary">Live Demo</a>
+                    <a href="#" class="btn-outline">GitHub Repo</a>
                 </div>
             </div>
             <div class="hero-image">
-                <img src="../public/images/project_details/route_rakshak/routeRakshak_citizen_dashboard.png" alt="Route Rakshak Dashboard">
+                <img src="../public/images/project_details/route_rakshak/routeRakshak_citizen_dashboard.png" alt="Route Rakshak Interface">
             </div>
-        </section>
+        </header>
 
         <section class="case-section split">
             <div>
-                <h2>The Problem</h2>
-                <p>Municipal complaint systems often lack transparency, leaving citizens unaware of progress and councilors unaccountable for their response times.</p>
+                <h2>The Concept</h2>
+                <p>Route Rakshak bridges the gap between chaotic citizen feedback and actionable urban insights. By converting individual complaints into streaming events, the system generates a "Live Pulse" of the city's infrastructure.</p>
             </div>
-            <div>
-                <h2>The Solution</h2>
-                <p>A centralized hub where 65 wards are ranked via a custom scoring engine, driving competition and clarity through data-driven governance.</p>
+            <div class="highlight-box">
+                <blockquote>"Moving from traditional batch-processing CRUD to a real-time event-driven architecture."</blockquote>
             </div>
         </section>
 
         <section class="case-section">
-          <h2>The Scoring Engine</h2>
-          <div class="technical-card">
-              <p>
-                  RouteRakshak implements a <b>Dynamic Performance Ledger</b>. Instead of simple averages, each ward's rank is determined by the cumulative actions of the authorities. This gamifies governance by rewarding resolution and penalizing delays.
-              </p>
+          <h2>Streaming Data Pipeline</h2>
+          <div class="pipeline-vertical">
               
-              <div class="logic-container">
-                  <div class="points-table">
-                      <div class="point-item"><span>+10</span> Completed</div>
-                      <div class="point-item"><span>+5</span> Resolved</div>
-                      <div class="point-item negative"><span>-2</span> In-Progress</div>
-                      <div class="point-item negative"><span>-5</span> Pending</div>
+              <div class="pipe-step">
+                  <div class="pipe-info">
+                      <span class="pipe-label">Input</span>
+                      <h3>Complaint Submission</h3>
+                      <p>Node.js backend captures geo-tagged reports and appends to event logs.</p>
                   </div>
-
-                  <div class="formula-box">
-                      <code>performanceScore(ward) = &sum; (event_scores)</code>
-                  </div>
+                  <div class="pipe-tech">Node.js</div>
               </div>
+
+              <div class="pipe-step">
+                  <div class="pipe-info">
+                      <span class="pipe-label">Process</span>
+                      <h3>Pathway Stream Engine</h3>
+                      <p>Real-time computation of ward deltas and performance scoring.</p>
+                  </div>
+                  <div class="pipe-tech">Pathway</div>
+              </div>
+
+              <div class="pipe-step">
+                  <div class="pipe-info">
+                      <span class="pipe-label">Sync</span>
+                      <h3>Database Indexing</h3>
+                      <p>Synchronizing computed ranks with MongoDB Geospatial indexes.</p>
+                  </div>
+                  <div class="pipe-tech">MongoDB</div>
+              </div>
+
+              <div class="pipe-step">
+                  <div class="pipe-info">
+                      <span class="pipe-label">Output</span>
+                      <h3>Urban Intelligence</h3>
+                      <p>Live Leaderboards and safest-route navigation for citizens.</p>
+                  </div>
+                  <div class="pipe-tech">SafeRoutes</div>
+              </div>
+
           </div>
       </section>
 
-        <section class="case-section split">
-            <div>
-                <h2>GIS & Mapping Strategy</h2>
-                <p>I used <b>QGIS</b> to digitalize ward maps, converting physical boundaries into GeoJSON data. This allows the MERN stack to render interactive, localized analytics for every specific ward in the city.</p>
-            </div>
-            <div class="technical-image">
-                <img src="../public/images/project_details/route_rakshak/routeRakshak_adminComplaintPanel.png" alt="Mapping Interface">
-            </div>
-        </section>
-
         <section class="case-section">
-            <h2>System Workflow</h2>
-            <div class="workflow">
-                <div class="wf-item"><span>1</span> Submit Complaint</div>
-                <div class="wf-item"><span>2</span> Mongoose Processing</div>
-                <div class="wf-item"><span>3</span> Admin Resolution</div>
-                <div class="wf-item"><span>4</span> Live Ranking Update</div>
+            <h2>The Scoring Engine</h2>
+            <div class="technical-card">
+                <div class="logic-container">
+                    <div class="points-grid">
+                        <div class="point-pill plus"><span>+10</span> Completed</div>
+                        <div class="point-pill plus"><span>+5</span> Resolved</div>
+                        <div class="point-pill minus"><span>-2</span> In-Progress</div>
+                        <div class="point-pill minus"><span>-5</span> Pending</div>
+                    </div>
+                    <div class="formula-box">
+                        <code>performanceScore(ward) = &sum; (event_scores)</code>
+                    </div>
+                </div>
+                <p class="mt-2">Every action is treated as a streaming event, processed via the <b>Pathway Engine</b> to provide instantaneous delta updates to ward rankings.</p>
             </div>
         </section>
 
         <section class="case-section grid-2">
-            <div>
-                <h2>Key Features</h2>
-                <ul class="styled-list">
-                    <li>Real-time Ward Performance Ranking</li>
-                    <li>Role-Based Admin Access (JWT)</li>
-                    <li>Interactive Geospatial Map Integration</li>
-                    <li>Automated Analytics Dashboard</li>
-                </ul>
+            <div class="feature-card">
+                <h3>📍 Geo-Spatial Intelligence</h3>
+                <p>Automated ward detection using MongoDB geospatial queries and QGIS-digitized maps. Integrated Cloudinary for media verification.</p>
             </div>
-            <div>
-                <h2>Tech Stack</h2>
-                <div class="tech-tags">
-                    <span>Node.js</span> <span>Express</span> <span>MongoDB</span> <span>Mongoose</span> <span>QGIS</span> <span>EJS</span>
-                </div>
+            <div class="feature-card">
+                <h3>🛣️ Smart Safe Routing</h3>
+                <p>Integrates OpenRouteService API to calculate the <b>safest</b> route rather than the shortest, actively avoiding high-risk damaged segments.</p>
             </div>
         </section>
 
         <section class="case-section">
-            <h2>Project Interface</h2>
-            <div class="images">
-                <img src="../public/images/project_details/route_rakshak/routeRakshak_citizen_dashboard.png" alt="Citizen View">
-                <img src="../public/images/project_details/route_rakshak/routeRakshak_admin_homePage.png" alt="Admin View">
+            <h2>Architecture & Stack</h2>
+            <div class="tech-tags">
+                <span>Node.js</span><span>Express</span><span>MongoDB</span><span>Pathway</span><span>QGIS</span><span>Cloudinary</span><span>OpenRouteService</span><span>EJS</span>
             </div>
         </section>
 
-        <section class="case-section learning-box">
-            <h2>Reflections & Learnings</h2>
-            <p>
-                Building RouteRakshak taught me how to handle complex data relationships using Mongoose and the importance of UX in civic-tech. I learned to bridge the gap between GIS software and web backend to create a tool that actually solves local issues.
-            </p>
+        <section class="case-section">
+            <h2>Engineering Challenges</h2>
+            <div class="learnings-grid">
+                <div class="learning-item">
+                    <h4>The ESM/CommonJS Hurdle</h4>
+                    <p>Navigating the Node.js ecosystem conflicts while integrating modern streaming libraries.</p>
+                </div>
+                <div class="learning-item">
+                    <h4>Latency Optimization</h4>
+                    <p>Designing a decoupled system (Events → Processing → DB Sync) to ensure sub-second ranking updates.</p>
+                </div>
+            </div>
         </section>
+
+        <footer class="footer">
+            <p>&copy; <span id="year"></span> Team Rawjet. Built for a smarter Amritsar.</p>
+        </footer>
     </div>
 
-    <footer class="footer">
-        <p>&copy; <span id="year"></span> Team Rawjet. All rights reserved.</p>
-    </footer>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
     <script src="../public/javascripts/script.js"></script>
-    <script>
-        document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
