@@ -1,153 +1,9 @@
-/* .case {
-  max-width: 900px;
-  margin: auto;
-  padding: 40px 20px;
-  font-family: 'Inter', sans-serif;
-  color: #1e293b;
-}
-
-.case-hero {
-  text-align: center;
-  margin-bottom: 60px;
-}
-
-.case-hero h1 {
-  font-size: 2.5rem;
-}
-
-.subtitle {
-  color: #64748b;
-  margin: 10px 0 20px;
-}
-
-.links a {
-  margin: 0 10px;
-  padding: 8px 16px;
-  border: 1px solid #2563eb;
-  border-radius: 6px;
-  text-decoration: none;
-  color: #2563eb;
-}
-
-.links a:hover {
-  background: #2563eb;
-  color: white;
-}
-
-.case-hero img {
-  width: 100%;
-  margin-top: 30px;
-  border-radius: 10px;
-}
-
-.case-section {
-  margin-bottom: 50px;
-}
-
-.case-section h2 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-}
-
-.case-section p {
-  color: #475569;
-  line-height: 1.6;
-}
-
-.workflow {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.workflow div {
-  padding: 10px;
-  background: #f1f5f9;
-  border-radius: 6px;
-}
-
-.images {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 15px;
-}
-
-.images img {
-  width: 100%;
-  border-radius: 8px;
-}
-
-.case-hero {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 40px;
-  padding: 80px 20px;
-  max-width: 1100px;
-  margin: auto;
-}
-
-.hero-text {
-  max-width: 500px;
-}
-
-.hero-text h1 {
-  font-size: 3rem;
-}
-
-.subtitle {
-  color: #64748b;
-  margin: 15px 0;
-}
-
-.hero-image img {
-  width: 450px;
-  border-radius: 12px;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
-}
-
-.case-section {
-  max-width: 900px;
-  margin: 80px auto;
-  padding: 0 20px;
-}
-
-.split {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
-}
-.workflow {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.workflow div {
-  padding: 12px 18px;
-  background: #f1f5f9;
-  border-radius: 8px;
-}
-
-.feature-list li {
-  margin-bottom: 10px;
-}
-.images {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-}
-body {
-  background: #f8fafc;
-} */
-
-
 
 :root {
     --bg-color: #0d0d0d;
     --text-primary: #ffffff;
     --text-secondary: #a0a0a0;
-    --accent: #3b82f6; /* Modern Blue */
+    --accent: #3b82f6; 
     --card-bg: #1a1a1a;
     --border: rgba(255, 255, 255, 0.1);
 }
@@ -172,7 +28,7 @@ body {
     padding: 2rem;
 }
 
-/* --- Hero Section --- */
+
 .case-hero {
     display: grid;
     grid-template-columns: 1.2fr 1fr;
@@ -364,26 +220,25 @@ body {
 
 .footer {
     width: 100%;
-    padding: 60px 0; /* Gives it breathing room */
-    background-color: #0d0d0d; /* Matches your body bg */
-    border-top: 1px solid rgba(255, 255, 255, 0.05); /* Very subtle line */
+    padding: 60px 0; 
+    background-color: #0d0d0d; 
+    border-top: 1px solid rgba(255, 255, 255, 0.05); 
     text-align: center;
     margin-top: 50px;
 }
 
 .footer p {
-    color: #888888; /* Lighter gray for better readability */
+    color: #888888; 
     font-size: 0.9rem;
     letter-spacing: 1px;
     font-weight: 400;
 }
 
-/* Optional: Make the "Team Rawjet" part slightly brighter */
 .footer p span, .footer b {
     color: #ffffff;
 }
 
-/* Technical Card styling */
+
 .technical-card {
     background: #151515;
     padding: 2.5rem;
@@ -404,7 +259,7 @@ body {
     font-family: 'Courier New', Courier, monospace;
 }
 
-/* Tech Tags styling */
+
 .tech-tags {
     display: flex;
     flex-wrap: wrap;
@@ -420,7 +275,7 @@ body {
     font-size: 0.85rem;
 }
 
-/* Workflow styling with numbers */
+
 .wf-item {
     display: flex;
     align-items: center;
@@ -436,7 +291,6 @@ body {
     font-size: 1.2rem;
 }
 
-/* Ensure images don't overflow */
 .technical-image img {
     width: 100%;
     border-radius: 12px;
@@ -471,11 +325,11 @@ body {
 
 .point-item span {
     font-weight: bold;
-    color: #4ade80; /* Success Green */
+    color: #4ade80; 
 }
 
 .point-item.negative span {
-    color: #f87171; /* Penalty Red */
+    color: #f87171; 
 }
 
 .formula-box {
@@ -502,7 +356,7 @@ body {
 }
 
 
-/* Badge Styling */
+
 .badge {
     background: rgba(59, 130, 246, 0.2);
     color: var(--accent);
@@ -514,7 +368,7 @@ body {
     letter-spacing: 1px;
 }
 
-/* Pipeline Flow */
+
 .pipeline-container {
     display: flex;
     align-items: center;
@@ -531,7 +385,7 @@ body {
 .pipeline-step p { font-size: 0.9rem; font-weight: 500; }
 .arrow { color: var(--border); font-size: 1.5rem; }
 
-/* Points Grid */
+
 .points-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -548,7 +402,7 @@ body {
 .point-pill.plus span { color: #4ade80; }
 .point-pill.minus span { color: #f87171; }
 
-/* Feature Cards */
+
 .feature-card {
     background: #151515;
     padding: 2rem;
@@ -558,7 +412,7 @@ body {
 
 .feature-card h3 { color: var(--accent); margin-bottom: 1rem; font-size: 1.2rem; }
 
-/* Learnings */
+
 .learnings-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
 .learning-item h4 { margin-bottom: 10px; color: var(--text-primary); }
 
@@ -587,7 +441,7 @@ body {
     transition: all 0.3s ease;
 }
 
-/* The dot on the line */
+
 .pipe-step::before {
     content: '';
     position: absolute;
@@ -645,7 +499,7 @@ body {
         gap: 1rem;
     }
 }
-/* --- Restored Gallery Styling --- */
+
 .section-sub {
     color: var(--text-secondary);
     margin-bottom: 2rem;
@@ -708,18 +562,16 @@ body {
 }
 
 
-/* for isro details page */
 
-/* ISRO Page Specific Enhancements */
 
-/* Give the badge a cosmic glow */
+
 .case-hero .badge {
-    background: rgba(147, 51, 234, 0.2); /* Deep Purple for Space */
+    background: rgba(147, 51, 234, 0.2); 
     color: #a855f7;
     border: 1px solid rgba(168, 85, 247, 0.3);
 }
 
-/* Learning Box Styling */
+
 .learning-box {
     background: linear-gradient(135deg, rgba(59, 130, 246, 0.05) 0%, rgba(147, 51, 234, 0.05) 100%);
     border-radius: 20px;
@@ -733,13 +585,13 @@ body {
     margin-bottom: 1rem;
 }
 
-/* Animations Steps Dot Color */
+
 .isro-theme .pipe-step::before {
     background: #a855f7;
     box-shadow: 0 0 15px #a855f7;
 }
 
-/* Ensure the hero image looks like it's floating */
+
 .hero-image img {
     animation: floating 6s ease-in-out infinite;
 }
@@ -754,10 +606,7 @@ body {
 
 
 
-/* ==========================================================================
-   1. SHARED CASE STUDY FRAMEWORK
-   (Common to Route Rakshak, ISRO, and Gaming)
-   ========================================================================== */
+
 
 .case {
     max-width: 1200px;
@@ -776,7 +625,7 @@ body {
     gap: 4rem;
 }
 
-/* Vertical Pipeline Stepper */
+
 .pipeline-vertical {
     display: flex;
     flex-direction: column;
@@ -803,18 +652,15 @@ body {
     border-radius: 50%;
 }
 
-/* ==========================================================================
-   2. GAMING THEME OVERRIDE (Tactical Noir)
-   Activated via <body class="gaming-theme">
-   ========================================================================== */
+
 
 .gaming-theme {
     background-color: #050505;
     color: #e0e0e0;
-    font-family: 'Courier New', Courier, monospace; /* Monospace for terminal feel */
+    font-family: 'Courier New', Courier, monospace; 
 }
 
-/* Hero Section: Cinematic Full-Width */
+
 .gaming-theme .game-hero {
     display: flex;
     flex-direction: row;
@@ -827,7 +673,7 @@ body {
 
 .gaming-theme .hero-text {
     flex: 1;
-    text-align: center !important; /* Centering text and buttons */
+    text-align: center !important; 
     max-width: 600px;
 }
 
@@ -848,7 +694,7 @@ body {
     -webkit-mask-image: linear-gradient(to left, black 80%, transparent 100%);
 }
 
-/* Glitch Title */
+
 .glitch-text {
     font-size: clamp(3rem, 8vw, 5.5rem);
     font-weight: 900;
@@ -858,7 +704,7 @@ body {
     display: inline-block;
 }
 
-/* Tactical Buttons Module */
+
 .gaming-theme .buttons {
     display: flex !important;
     flex-direction: column !important;
@@ -908,7 +754,7 @@ body {
     color: #000 !important;
 }
 
-/* Specific UI Elements */
+
 .status-badge {
     color: #ff0000;
     font-size: 0.75rem;
@@ -938,9 +784,7 @@ body {
 .spec-list { list-style: none; }
 .spec-list span { color: #ff0000; font-weight: bold; margin-right: 10px; }
 
-/* ==========================================================================
-   3. RESPONSIVE ENGINE
-   ========================================================================== */
+
 
 @media screen and (max-width: 992px) {
     .gaming-theme .game-hero {
@@ -959,4 +803,31 @@ body {
     }
 
     .split { grid-template-columns: 1fr; gap: 2rem; }
+}
+
+
+.badge {
+    display: inline-block;        
+    width: fit-content;          
+    white-space: nowrap;          
+    padding: 8px 20px;            
+    background: rgba(147, 51, 234, 0.15); 
+    color: #a855f7;
+    border: 1px solid rgba(168, 85, 247, 0.3);
+    border-radius: 50px;          
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;        
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+}
+
+
+@media (max-width: 480px) {
+    .badge {
+        white-space: normal;      
+        border-radius: 12px;      
+        line-height: 1.4;
+        text-align: center;
+    }
 }
