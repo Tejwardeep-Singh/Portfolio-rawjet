@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="../public/favicon/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../public/favicon/favicon/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../public/favicon/favicon.ico">
+    <link rel="manifest" href="../public/favicon/site.webmanifest">
+    <link rel="stylesheet" href="../public/stylesheets/style.css">
+    <link rel="stylesheet" href="../public/stylesheets/details.css">
+    <title>Tejwardeep Singh | Countdown: GrayHeaven</title>
+</head>
+<body class="gaming-theme">
+
+    <div class="case game-container">
+        <nav class="nav-header">
+            <a href="/" class="back-link">
+                <span class="glitch-icon">_</span> Back to HQ
+            </a>
+        </nav>
+
+        <header class="case-hero game-hero">
+            <div class="hero-text">
+                <span class="status-badge">Project: GrayHeaven</span>
+                <h1 class="glitch-text" data-text="COUNTDOWN">COUNTDOWN</h1>
+                <p class="subtitle">
+                    A high-stakes detective thriller built in Unity. Every second spent searching is a second closer to catastrophe.
+                </p>
+                <div class="buttons">
+                    <a href="https://rawjet.itch.io/countdown-grayheaven" class="btn-danger">Initialize Mission</a>
+                    <a href="#" class="btn-outline">Intelligence Log (GitHub)</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="timer-overlay">00:00:00</div>
+                <img src="../public/images/countdown.png" alt="GrayHeaven Gameplay">
+            </div>
+        </header>
+
+        <section class="case-section split">
+            <div class="brief-box">
+                <h2>The Objective</h2>
+                <p>Stop the detonation. You are dropped into a city with zero intel. Use logical reasoning to connect environmental clues before the clock hits zero.</p>
+            </div>
+            <div class="brief-box">
+                <h2>The Mechanic</h2>
+                <p>No hand-holding. The game uses a non-linear interaction system where the environment itself tells the story. Investigation is the only path to the target.</p>
+            </div>
+        </section>
+
+        <section class="case-section">
+            <h2>Mission Parameters</h2>
+            <div class="pipeline-vertical tactical">
+                <div class="pipe-step">
+                    <div class="pipe-info">
+                        <span class="pipe-label">Infiltration</span>
+                        <h3>Exploration & Movement</h3>
+                        <p>Third-person WASD movement with a dynamic camera system optimized for tight urban exploration.</p>
+                    </div>
+                </div>
+                <div class="pipe-step">
+                    <div class="pipe-info">
+                        <span class="pipe-label">Intelligence</span>
+                        <h3>Interaction System</h3>
+                        <p>C#-driven raycasting system allows the player to examine objects and collect narrative fragments.</p>
+                    </div>
+                </div>
+                <div class="pipe-step">
+                    <div class="pipe-info">
+                        <span class="pipe-label">Execution</span>
+                        <h3>Timed Clue Progression</h3>
+                        <p>A sequential logic gate system: Clues must be interpreted correctly to reveal the final defusal point.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="case-section grid-2">
+            <div class="tech-spec-card">
+                <h3>System Architecture</h3>
+                <ul class="spec-list">
+                    <li><span>Engine:</span> Unity 3D</li>
+                    <li><span>Logic:</span> C# Programming</li>
+                    <li><span>Assets:</span> Blender (3D Modeling)</li>
+                    <li><span>Platform:</span> PC / Windows</li>
+                </ul>
+            </div>
+            <div class="tech-spec-card">
+                <h3>Atmospheric Design</h3>
+                <p>Low-key lighting and spatial audio design are used to create a "Realistic Thriller" experience without relying on supernatural tropes.</p>
+            </div>
+        </section>
+
+        <section class="case-section">
+            <h2>Field Evidence</h2>
+            <div class="screenshot-gallery game-gallery">
+                <div class="gallery-item large">
+                    <img src="../public/images/countdown.png" alt="Game Environment">
+                </div>
+                <div class="gallery-grid">
+                    <div class="gallery-item"><img src="../public/images/project_details/countdown/countdown_menu.png" alt="menu"></div>
+                    <div class="gallery-item"><img src="../public/images/project_details/countdown/countdown-ss2.png" alt="countdown-ss2"></div>
+                    <div class="gallery-item"><img src="../public/images/project_details/countdown/countdown-ss3.png" alt="countdown-ss3"></div>
+                    <div class="gallery-item"><img src="../public/images/project_details/countdown/countdown-ss4.png" alt="countdown-ss4"></div>
+                    <div class="gallery-item"><img src="../public/images/project_details/countdown/countdown-ss5.png" alt="countdown-ss5"></div>
+                    <div class="gallery-item"><img src="../public/images/project_details/countdown/countdown-ss6.png" alt="countdown-ss6"></div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer game-footer">
+            <p>TERMINAL ID: <span id="year"></span> | DEVELOPER: TEJWARDEEP SINGH | STORY: SNEHDEEP KAUR</p>
+        </footer>
+    </div>
+
+    <script src="../public/javascripts/script.js"></script>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
