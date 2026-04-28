@@ -3,88 +3,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="apple-touch-icon" sizes="180x180" href="../public/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../public/favicon/android-chrome-192x192.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../public/favicon/favicon/favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../public/favicon/android-chrome-192x192.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../public/favicon/favicon.ico">
     <link rel="manifest" href="../public/favicon/site.webmanifest">
     <link rel="stylesheet" href="../public/stylesheets/style.css">
-    <title>Tejwardeep Singh| Project Detials| E-Election</title>
+    <link rel="stylesheet" href="../public/stylesheets/details.css">
+    <title>Tejwardeep Singh | E-Election Case Study</title>
 </head>
-<body>
+<body class="election-theme">
 
-    <section class="project-detail">
+    <div class="case">
+        <nav class="nav-header">
+            <a href="/" class="back-link">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+                Back to Home
+            </a>
+        </nav>
 
-  <a href="../index.html" class="back-btn">← Back</a>
+        <header class="case-hero">
+            <div class="hero-text">
+                <span class="badge">Full-Stack • Security • RBAC</span>
+                <h1>E-Election System</h1>
+                <p class="subtitle">
+                    A high-integrity digital voting platform designed to eliminate fraud and manual delays through role-based architecture and real-time verification.
+                </p>
+                <div class="buttons">
+                    <a href="https://voterrawjet.onrender.com" class="btn-primary">Voter Portal</a>
+                    <a href="https://github.com/Tejwardeep-Singh/E-ELECTION-RAWJET" class="btn-outline">GitHub Repository</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="../public/images/election.png" alt="E-Election Dashboard Preview">
+            </div>
+        </header>
 
-  <h1>Route Rakshak</h1>
+        <section class="case-section split">
+            <div class="brief-box">
+                <h2>The Challenge</h2>
+                <p>Traditional voting is plagued by lack of transparency, manual errors, and the high risk of duplicate voting. Scaling an election for an institution requires a system that is both unhackable and accessible.</p>
+            </div>
+            <div class="brief-box">
+                <h2>The Strategy</h2>
+                <p>I engineered a dual-panel system (Admin/Voter) that enforces a "One-Person-One-Vote" policy. By offloading media to Cloudinary and securing routes via server-side validation, I ensured data integrity at every step.</p>
+            </div>
+        </section>
 
-  <img src="../public/images/routeRakshak.png" alt="Route Rakshak">
+        <section class="case-section">
+            <h2>Voting Lifecycle & Security</h2>
+            <div class="pipeline-vertical election-pipe">
+                
+                <div class="pipe-step">
+                    <div class="pipe-info">
+                        <span class="pipe-label">Step 01</span>
+                        <h3>Identity Verification</h3>
+                        <p>Strict login/registration system with session management to ensure only authorized users access the ballot.</p>
+                    </div>
+                    <div class="pipe-tech">RBAC</div>
+                </div>
 
-  <p class="desc">
-    Civic-tech platform designed to streamline complaint management and enable 
-    data-driven ward performance tracking for better governance.
-  </p>
+                <div class="pipe-step">
+                    <div class="pipe-info">
+                        <span class="pipe-label">Step 02</span>
+                        <h3>Encrypted Balloting</h3>
+                        <p>Voters interact with a clean UI to view candidate profiles, including criminal records and party details, before casting a secure vote.</p>
+                    </div>
+                    <div class="pipe-tech">React.js</div>
+                </div>
 
-  <!-- TECH STACK -->
-  <div class="tech">
-    <span>HTML</span>
-    <span>CSS</span>
-    <span>JavaScript</span>
-    <span>Node.js</span>
-    <span>Express</span>
-    <span>MongoDB</span>
-    <span>Mongoose</span>
-    <span>Bcrypt</span>
-    <span>QGIS</span>
-  </div>
+                <div class="pipe-step">
+                    <div class="pipe-info">
+                        <span class="pipe-label">Step 03</span>
+                        <h3>Integrity Check</h3>
+                        <p>Server-side logic prevents duplicate entries. Once a vote is cast, the voter's status is permanently updated to 'voted'.</p>
+                    </div>
+                    <div class="pipe-tech">Node.js</div>
+                </div>
 
-  <!-- BUTTONS -->
-  <div class="buttons">
-    <a href="https://routerakshak.onrender.com/">Citizen Portal</a>
-    <a href="https://routerakshakadmin.onrender.com/">Admin Panel</a>
-    <a href="https://github.com/Tejwardeep-Singh/RouteRakshak">GitHub</a>
-  </div>
+                <div class="pipe-step">
+                    <div class="pipe-info">
+                        <span class="pipe-label">Step 04</span>
+                        <h3>Real-Time Tally</h3>
+                        <p>Instant aggregation of results displayed in the Admin Dashboard without the need for manual interference or page refreshes.</p>
+                    </div>
+                    <div class="pipe-tech">MongoDB</div>
+                </div>
 
-  <!-- FEATURES -->
-  <div class="section">
-    <h2>Key Features</h2>
-    <ul>
-      <li>Complaint registration and tracking system for citizens</li>
-      <li>Admin dashboard for managing and resolving complaints</li>
-      <li>Automated ward performance ranking system</li>
-      <li>Data-driven insights for better decision making</li>
-      <li>Secure authentication and user management</li>
-    </ul>
-  </div>
+            </div>
+        </section>
 
-  <!-- PROBLEM -->
-  <div class="section">
-    <h2>Problem It Solves</h2>
-    <p>
-      Many cities face inefficiencies in complaint handling and lack transparency 
-      in civic operations. Route Rakshak addresses this by providing a centralized 
-      platform where complaints are tracked and performance is measured objectively.
-    </p>
-  </div>
+        <section class="case-section grid-2">
+            <div class="feature-card">
+                <h3>🛡️ Security First</h3>
+                <p>Protected API routes and session-based navigation prevent unauthorized access to administrative panels and candidate management.</p>
+            </div>
+            <div class="feature-card">
+                <h3>☁️ Cloud Media Handling</h3>
+                <p>Seamless integration with Cloudinary for optimized storage of candidate images and party symbols, ensuring high performance.</p>
+            </div>
+        </section>
 
-  <!-- YOUR ROLE -->
-  <div class="section">
-    <h2>My Contribution</h2>
-    <ul>
-      <li>Developed backend APIs using Node.js and Express</li>
-      <li>Designed database schema using MongoDB and Mongoose</li>
-      <li>Implemented authentication and security features</li>
-      <li>Collaborated on UI and system logic</li>
-    </ul>
-  </div>
+        <section class="case-section">
+            <h2>System Stack</h2>
+            <div class="tech-tags">
+                <span>React.js</span><span>Node.js</span><span>Express.js</span><span>MongoDB</span><span>Mongoose</span><span>Cloudinary</span><span>JWT</span><span>Multer</span>
+            </div>
+        </section>
 
-</section>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js" integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+        <section class="case-section">
+            <h2>Future-Proofing</h2>
+            <div class="learnings-grid">
+                <div class="learning-item">
+                    <h4>Enhanced Verification</h4>
+                    <p>Integrating OTP-based protocols or biometric authentication to further harden the identity layer.</p>
+                </div>
+                <div class="learning-item">
+                    <h4>Blockchain Transparency</h4>
+                    <p>Transitioning vote storage to a decentralized ledger to make the counting process mathematically immutable.</p>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>&copy; <span id="year"></span> Team Rawjet. Empowering Democracy through Code.</p>
+        </footer>
+    </div>
+
     <script src="../public/javascripts/script.js"></script>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
