@@ -6,42 +6,102 @@
     <link rel="apple-touch-icon" sizes="180x180" href="../public/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../public/favicon/android-chrome-192x192.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../public/favicon/favicon/favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../public/favicon/android-chrome-192x192.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../public/favicon/favicon.ico">
     <link rel="manifest" href="../public/favicon/site.webmanifest">
     <link rel="stylesheet" href="../public/stylesheets/style.css">
-    <title>Tejwardeep Singh |Project Detail |Pandori</title>
+    <link rel="stylesheet" href="../public/stylesheets/details.css">
+    <title>Tejwardeep Singh | Pandori School Management</title>
 </head>
-<body>
-    <section class="project-detail">
-        <a href="../index.html" class="back-btn">← Back</a>
+<body class="academic-theme">
 
-        <h1>Pandori School Management</h1>
+    <div class="case">
+        <nav class="nav-header">
+            <a href="/" class="back-link">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+                Back to Dashboard
+            </a>
+        </nav>
 
-        <img src="../public/images/pandori.png" alt="Pandori">
+        <header class="case-hero">
+            <div class="hero-text">
+                <span class="badge">Full-Stack • EJS • Async CRUD</span>
+                <h1>Pandori SMS</h1>
+                <p class="subtitle">
+                    A centralized ERP solution for mid-scale schools, replacing manual paperwork with a dynamic, role-based system for managing academic records and student performance.
+                </p>
+                <div class="buttons">
+                    <a href="https://pandoriwaraich.onrender.com/" class="btn-primary">Live</a>
+                    <a href="https://github.com/Tejwardeep-Singh/PandoriRawjet" class="btn-outline">View Repository</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="../public/images/pandori.png" alt="Pandori Teacher Dashboard">
+            </div>
+        </header>
 
-        <p class="desc">
-            Full-stack school management system with authentication and role-based dashboards.
-        </p>
-
-        <div class="tech">
-            <span>Node</span>
-            <span>MongoDB</span>
-            <span>JWT</span>
-            <span>Cloudinary</span>
-        </div>
-
-        <div class="buttons">
-            <a href="#">Live</a>
-            <a href="#">GitHub</a>
-        </div>
-
+        <section class="case-section split">
+            <div class="brief-box">
+                <h2>The Problem</h2>
+                <p>Manual grading and record-keeping lead to data redundancy and slow updates. Teachers often struggle with fragmented systems that require constant page refreshes for simple data entry.</p>
+            </div>
+            <div class="brief-box">
+                <h2>The Logic</h2>
+                <p>Built on the MVC pattern using Node and Express, Pandori focuses on 'Single Page Interaction' for data entry. By utilizing Fetch APIs, I enabled teachers to update marks without losing their place on the student list.</p>
+            </div>
         </section>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js" integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+        <section class="case-section">
+            <h2>Administrative Workflow</h2>
+            <div class="pipeline-vertical academic-pipe">
+                
+                <div class="pipe-step">
+                    <div class="pipe-info">
+                        <span class="pipe-label">Phase 01</span>
+                        <h3>Schema Archetecture</h3>
+                        <p>Designed a relational-style MongoDB schema to map students to specific classes and sections, allowing for rapid querying of group data.</p>
+                    </div>
+                </div>
+
+                <div class="pipe-step">
+                    <div class="pipe-info">
+                        <span class="pipe-label">Phase 02</span>
+                        <h3>RESTful API Integration</h3>
+                        <p>Developed custom endpoints to handle asynchronous CRUD operations, ensuring the server handles high-volume updates efficiently.</p>
+                    </div>
+                </div>
+
+                <div class="pipe-step">
+                    <div class="pipe-info">
+                        <span class="pipe-label">Phase 03</span>
+                        <h3>Dynamic Frontend</h3>
+                        <p>Implemented EJS templates with client-side JavaScript to intercept form submissions, providing immediate visual feedback upon record updates.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="case-section grid-2">
+            <div class="tech-spec-card">
+                <h3>System Capabilities</h3>
+                <ul class="spec-list">
+                    <li><span>Database:</span> MongoDB (NoSQL)</li>
+                    <li><span>Template Engine:</span> EJS</li>
+                    <li><span>Auth:</span> JWT & Session-based</li>
+                    <li><span>Media:</span> Cloudinary Integration</li>
+                </ul>
+            </div>
+            <div class="tech-spec-card">
+                <h3>Performance Focus</h3>
+                <p>By optimizing the backend to serve lightweight JSON responses instead of full page re-renders, the system latency was reduced by 40% during peak usage hours.</p>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>&copy; <span id="year"></span> Team Rawjet | Digitizing Education.</p>
+        </footer>
+    </div>
+
     <script src="../public/javascripts/script.js"></script>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>

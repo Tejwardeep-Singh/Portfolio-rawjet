@@ -833,10 +833,10 @@ body {
 }
 
 
-/* --- E-Election Theme Module --- */
+
 
 .election-theme .badge {
-    background: rgba(16, 185, 129, 0.15); /* Emerald Green for success/trust */
+    background: rgba(16, 185, 129, 0.15); 
     color: #10b981;
     border: 1px solid rgba(16, 185, 129, 0.3);
 }
@@ -855,7 +855,7 @@ body {
     border-left-color: #10b981;
 }
 
-/* Brief boxes for Election */
+
 .brief-box {
     background: rgba(255, 255, 255, 0.02);
     padding: 2.5rem;
@@ -873,4 +873,129 @@ body {
     background: rgba(16, 185, 129, 0.05);
     border-color: rgba(16, 185, 129, 0.2);
     color: #10b981;
+}
+
+
+
+.academic-theme {
+    --accent: #2563eb; 
+    --accent-soft: rgba(37, 99, 235, 0.1);
+    --bg-surface: #0f172a; 
+}
+
+
+.academic-theme .badge {
+    background: var(--accent-soft);
+    color: var(--accent);
+    border: 1px solid rgba(37, 99, 235, 0.3);
+   
+    display: inline-block;
+    width: fit-content;
+    white-space: nowrap;
+}
+
+.academic-theme .btn-primary {
+    background: var(--accent);
+    color: #ffffff;
+    border: 1px solid var(--accent);
+}
+
+.academic-theme .btn-primary:hover {
+    background: #1d4ed8;
+    box-shadow: 0 0 20px rgba(37, 99, 235, 0.4);
+}
+
+
+.academic-theme .brief-box {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 2.5rem;
+    border-radius: 16px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.academic-theme .brief-box:hover {
+    border-color: var(--accent);
+    transform: translateY(-5px);
+}
+
+.academic-theme .brief-box h2 {
+    color: var(--accent);
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.academic-theme .brief-box p {
+    color: #cbd5e1; 
+    line-height: 1.7;
+}
+
+
+.academic-theme .pipeline-vertical {
+    border-left: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.academic-theme .pipe-step::before {
+    background: var(--accent);
+    box-shadow: 0 0 15px var(--accent);
+    left: -6px; /* Centers the dot on the 2px line */
+}
+
+.academic-theme .pipe-label {
+    color: var(--accent);
+    font-weight: 700;
+}
+
+.academic-theme .pipe-info h3 {
+    color: #ffffff;
+}
+
+.academic-theme .pipe-info p {
+    color: #94a3b8;
+}
+
+
+.academic-theme .tech-spec-card {
+    background: #1a1a1a;
+    padding: 2.5rem;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.academic-theme .tech-spec-card h3 {
+    color: var(--accent);
+    margin-bottom: 1.5rem;
+}
+
+.academic-theme .spec-list li span {
+    color: var(--accent);
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+.academic-theme .spec-list li {
+    list-style: none;
+    margin-bottom: 12px;
+    color: #e2e8f0;
+}
+
+
+@media screen and (max-width: 900px) {
+    .academic-theme .case-hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .academic-theme .hero-text {
+        order: 2;
+    }
+
+    .academic-theme .hero-image {
+        order: 1;
+    }
+
+    .academic-theme .split {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
 }
