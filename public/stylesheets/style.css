@@ -923,7 +923,7 @@ section{
     .project {
         flex: 0 0 auto;
         width: 80vw;
-        height:40vh;
+        height:50vh;
         border-radius: 5px;
         background-color: #3B82F6;
         display: flex;
