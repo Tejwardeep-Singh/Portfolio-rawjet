@@ -157,3 +157,23 @@ gsap.from(".section-card", {
   stagger: 0.2
 });
 
+function openLightbox(element) {
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const clickedImgSrc = element.querySelector('img').src;
+
+    lightboxImg.src = clickedImgSrc;
+    lightbox.classList.add('active');
+    document.body.style.overflow = 'hidden'; // Stop scrolling
+}
+
+function closeLightbox() {
+    const lightbox = document.getElementById('lightbox');
+    lightbox.classList.remove('active');
+    document.body.style.overflow = 'auto'; // Resume scrolling
+}
+
+// Close on Escape key
+document.addEventListener('keydown', (e) => {
+    if (e.key === "Escape") closeLightbox();
+});
