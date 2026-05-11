@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="../public/favicon/android-chrome-192x192.png">
+    <link rel="manifest" href="../public/favicon/site.webmanifest">
+    <link rel="stylesheet" href="../public/stylesheets/style.css">
+    <link rel="stylesheet" href="../public/stylesheets/details.css">
+    <title>Tejwardeep Singh | Bridgo 2.0</title>
+</head>
+<body class="marketplace-theme">
+
+    <div class="case">
+        <nav class="nav-header">
+            <a href="/" class="back-link">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+                Back to Home
+            </a>
+        </nav>
+
+        <header class="case-hero">
+            <div class="hero-text">
+                <span class="badge">Real-Time Auction & Geo-Commerce</span>
+                <h1>Bridgo 2.0</h1>
+                <p class="subtitle">
+                    A full-stack bidding ecosystem connecting local street vendors with raw material suppliers through location-aware live auctions and event-driven communication.
+                </p>
+                <div class="buttons">
+                    <a href="https://bridgo.onrender.com/" class="btn-primary">Live Auction</a>
+                    <a href="https://github.com/Tejwardeep-Singh/Bridgo-2.0" class="btn-outline">GitHub Repo</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="../public/images/bridgo.png" alt="Bridgo Dashboard Interface">
+            </div>
+        </header>
+
+        <section class="case-section split">
+            <div>
+                <h2>The Objective</h2>
+                <p>Bridgo 2.0 digitizes the unorganized procurement chain of local vendors. By replacing manual, opaque pricing with a transparent <b>Live Bidding</b> system, it empowers small businesses to source materials at competitive, real-time rates.</p>
+            </div>
+            <div class="highlight-box">
+                <blockquote>"Transforming local supply chains from static manual orders to dynamic, location-aware bidding wars."</blockquote>
+            </div>
+        </section>
+
+        <section class="case-section">
+          <h2>Bidding & Notification Pipeline</h2>
+          <div class="pipeline-vertical bridgo-pipe">
+              
+              <div class="pipe-step">
+                  <div class="pipe-info">
+                      <span class="pipe-label">Discovery</span>
+                      <h3>Geo-Aware Registration</h3>
+                      <p>Hierarchical location system (State → City → Area) using Browser GPS to map users to their local commercial hub.</p>
+                  </div>
+                  <div class="pipe-tech">Geolocation</div>
+              </div>
+
+              <div class="pipe-step">
+                  <div class="pipe-info">
+                      <span class="pipe-label">Engagement</span>
+                      <h3>Live Auction Rooms</h3>
+                      <p>Suppliers broadcast material requirements; vendors join specific Socket.IO rooms to place dynamic bids.</p>
+                  </div>
+                  <div class="pipe-tech">Socket.IO</div>
+              </div>
+
+              <div class="pipe-step">
+                  <div class="pipe-info">
+                      <span class="pipe-label">Intelligence</span>
+                      <h3>Real-time Event Stack</h3>
+                      <p>Unread counters and unmount-safe notifications keep users updated on bid status and auction victories.</p>
+                  </div>
+                  <div class="pipe-tech">Event Emitters</div>
+              </div>
+
+              <div class="pipe-step">
+                  <div class="pipe-info">
+                      <span class="pipe-label">Settlement</span>
+                      <h3>Dashboard Synchronization</h3>
+                      <p>Role-based interfaces update DOM elements instantly as bids are accepted or outbid.</p>
+                  </div>
+                  <div class="pipe-tech">Node.js</div>
+              </div>
+
+          </div>
+      </section>
+
+        <section class="case-section">
+            <h2>The Bidding Logic</h2>
+            <div class="technical-card">
+                <div class="logic-container">
+                    <div class="points-grid">
+                        <div class="point-pill plus"><span>Active</span> Room Join</div>
+                        <div class="point-pill plus"><span>Broadcast</span> Live Bids</div>
+                        <div class="point-pill minus"><span>Expired</span> Auto-close</div>
+                        <div class="point-pill minus"><span>Validation</span> Bid Guard</div>
+                    </div>
+                    <div class="formula-box">
+                        <code>socket.to(auctionId).emit('newBid')</code>
+                    </div>
+                </div>
+                <p class="mt-2">Utilizing <b>Socket.IO Room Management</b>, the system ensures that bid updates are only transmitted to active participants of a specific auction, minimizing server overhead.</p>
+            </div>
+        </section>
+
+        <section class="case-section grid-2">
+            <div class="feature-card">
+                <h3>📍 Location-Aware Architecture</h3>
+                <p>Stores precise coordinates for future implementation of delivery radius filtering and nearest-neighbor supplier matching.</p>
+            </div>
+            <div class="feature-card">
+                <h3>🔔 Role-Specific Notifications</h3>
+                <p>Dual-channel notification system: <i>User Rooms</i> for personal alerts and <i>Auction Rooms</i> for competitive bidding activity.</p>
+            </div>
+        </section>
+
+        <section class="case-section">
+            <h2>System Tech Stack</h2>
+            <div class="tech-tags">
+                <span>Node.js</span><span>Express</span><span>MongoDB</span><span>Socket.IO</span><span>EJS</span><span>Express Sessions</span><span>CSS3</span><span>Mongoose</span>
+            </div>
+        </section>
+
+        <section class="case-section">
+            <h2>Challenges & Refactoring</h2>
+            <div class="learnings-grid">
+                <div class="learning-item">
+                    <h4>Asynchronous Synchronization</h4>
+                    <p>Maintaining a consistent auction clock across hundreds of clients using server-side timers and event broadcasting.</p>
+                </div>
+                <div class="learning-item">
+                    <h4>Hierarchical UI Rendering</h4>
+                    <p>Building a dynamic location picker that pulls dependent data (Cities → Areas) without refreshing the registration flow.</p>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>&copy; <span id="year"></span> Team Rawjet. Bridging the gap in local commerce.</p>
+        </footer>
+    </div>
+
+    <script src="../public/javascripts/script.js"></script>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

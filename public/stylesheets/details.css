@@ -1071,3 +1071,52 @@ body {
         grid-template-columns: 1fr;
     }
 }
+
+
+
+/* --- Bridgo 2.0 Marketplace Theme --- */
+
+.marketplace-theme {
+    --accent: #f59e0b; /* Marketplace Gold/Amber */
+    --accent-soft: rgba(245, 158, 11, 0.15);
+    --bg-surface: #0a0f0e; /* Very dark teal tint */
+}
+
+.marketplace-theme .badge {
+    background: var(--accent-soft);
+    color: var(--accent);
+    border: 1px solid rgba(245, 158, 11, 0.3);
+}
+
+.marketplace-theme .case-section h2 {
+    color: var(--accent);
+}
+
+/* Bridgo Pipeline Customization */
+.bridgo-pipe .pipe-step::before {
+    background: var(--accent);
+    box-shadow: 0 0 15px var(--accent);
+}
+
+.bridgo-pipe .pipe-step:hover {
+    border-left-color: var(--accent);
+    background: rgba(245, 158, 11, 0.03);
+}
+
+.marketplace-theme .tech-tags span {
+    background: rgba(245, 158, 11, 0.05);
+    border-color: rgba(245, 158, 11, 0.2);
+    color: var(--accent);
+}
+
+.marketplace-theme .btn-primary {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: #000;
+    font-weight: 700;
+}
+
+.marketplace-theme .btn-primary:hover {
+    background: #d97706;
+    box-shadow: 0 0 20px rgba(245, 158, 11, 0.4);
+}
