@@ -472,6 +472,8 @@ section{
     align-items: center;
     justify-content: center;
     gap: 5vh;
+    padding: 0 0 2% 0;
+    border-bottom: 2px dotted #CBD5E0;
 }
 .project{
     height: 50vh;
@@ -1050,3 +1052,4 @@ section{
     outline: 2px solid var(--accent);
     outline-offset: -2px; /* Keeps it inside the box */
 }
+
